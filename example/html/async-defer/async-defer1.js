@@ -1,3 +1,3 @@
 $("#test").click(function(){
-    alert("each1");
+    alert("async-defer1");
 });

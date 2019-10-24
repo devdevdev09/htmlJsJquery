@@ -1,5 +1,5 @@
 $(function(){
     $("#test").click(function(){
-        alert("each3");
+        alert("async-defer3");
     });
 });
