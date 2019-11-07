@@ -2,6 +2,7 @@ $(function(){
     remove();
 });
 
+
 var remove = function removeElement(){
     // $("#main").remove();  // div#main 없애기
 
