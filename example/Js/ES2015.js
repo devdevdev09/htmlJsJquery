@@ -1,5 +1,3 @@
-// ES2015 정리
-
 // 파라미터를 배열로 받을 수 있음
 function test1(param, ...params){
     console.log(param);
@@ -9,7 +7,25 @@ function test1(param, ...params){
     }
 }
 
-// object 사용시, 키만 적을 수 있음
+// for문을 foreach로
+function test1_1(param, ...params){
+    params.forEach(function(element, i, arr){
+        console.log(arr[i]);
+    })
+}
+
+// 백틱으로 동적 배열 추가
+function test1_2(param, ...params){
+    const objs = {};
+
+    params.forEach(function(element, i, arr){
+        objs[`obj${i}`] = arr[i];
+    });
+
+    console.log(objs);
+}
+
+// object 사용시
 function test2(userName){
     // const obj = {
     //     userName : userName
